@@ -1,12 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import List from '../components/List.tsx';
+import RandomAvatarCard from '../components/RandomAvatarCard.tsx';
 ---
-
-<Layout title="Welcome to Astro.">
+<Layout title="Random Avatar Card">
 	<main>
-		<h1>Componente Lista</h1>
-		<List client:load />
+		<h1>componente avatar</h1>
+		<RandomAvatarCard client:load />
 	</main>
 </Layout>
 
@@ -19,9 +18,9 @@ import List from '../components/List.tsx';
 		color: black;
 		font-size: 20px;
 		line-height: 1.6;
+		text-align: center;
 		background-color: white;
 	}
-
 	h1 {
 		font-size: 2rem;
 		font-weight: 700;
