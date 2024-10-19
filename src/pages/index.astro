@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button.tsx';
+import List from '../components/List.tsx';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Componente de Botón + 50</h1>
-		<Button client:load />
+		<h1>Componente Lista</h1>
+		<List client:load />
 	</main>
 </Layout>
 
@@ -19,22 +19,11 @@ import Button from '../components/Button.tsx';
 		color: black;
 		font-size: 20px;
 		line-height: 1.6;
-		text-align: center;
 		background-color: white;
 	}
 
 	h1 {
 		font-size: 2rem;
 		font-weight: 700;
-		margin-bottom: 1em;
-	}
-
-	button {
-		font-size: 2rem;
-		padding: 1rem 2rem;
-		color: white;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
 	}
 </style>
